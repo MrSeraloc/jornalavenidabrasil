@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#e30613" />
+    <meta name="description" content="Encarte digital Drogaria Total — role para navegar pelas ofertas." />
+    <title>Ofertas Drogaria Total</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="topo">
+        <div class="edition-strip">
+          <div class="page-container edition-inner">
+            <span><span class="live-dot"></span> Encarte de ofertas <strong>Ed. 09</strong></span>
+            <span>01 a 30 de setembro de 2026</span>
+          </div>
+        </div>
+        <div class="page-container compact-header">
+          <a class="brand" href="#topo" aria-label="Drogaria Total - início">
+            <span class="brand-mark" aria-hidden="true"><span></span><i></i></span>
+            <span class="brand-copy"><span class="brand-name">Drogaria<span>Total</span></span><span class="brand-subtitle">Ofertas que fazem bem</span></span>
+          </a>
+          <button class="share-button" data-action="share-site"><span class="icon" data-icon="share"></span><span>Compartilhar</span></button>
+        </div>
+      </header>
+
+      <main>
+        <section class="feed-shell" id="ofertas" aria-labelledby="feed-title">
+          <div class="feed-intro">
+            <span class="feed-kicker">Caderno digital · Especial 30 anos</span>
+            <h1 id="feed-title">Ofertas que fazem<br /><em>bem.</em></h1>
+            <p>Role para navegar pelo encarte completo.</p>
+            <div class="feed-meta"><span><strong id="feed-count">61</strong> artes em sequência</span><span class="scroll-tip"><span class="icon" data-icon="arrow-down"></span> é só deslizar</span></div>
+          </div>
+
+          <div class="offer-feed" id="offer-feed" aria-live="polite"></div>
+          <div class="feed-sentinel" id="feed-sentinel" aria-hidden="true"><span class="loader"></span></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <h2>Não foi possível carregar as ofertas.</h2>
+            <p>Atualize a página para tentar novamente.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="page-container footer-inner">
+          <div class="footer-brand"><span class="brand-mark small" aria-hidden="true"><span></span><i></i></span> Drogaria<span>Total</span></div>
+          <p>Ofertas válidas de 01 a 30 de setembro de 2026, ou enquanto durarem os estoques.</p>
+        </div>
+      </footer>
+    </div>
+
+    <button class="back-top" data-action="scroll-top" aria-label="Voltar ao topo"><span class="icon" data-icon="arrow-up"></span></button>
+
+    <div class="modal-backdrop" id="offer-modal" hidden>
+      <div class="modal-dialog offer-dialog" role="dialog" aria-modal="true" aria-labelledby="offer-modal-title">
+        <button class="close-button offer-close" data-action="close-modal" aria-label="Fechar"><span class="icon" data-icon="x"></span></button>
+        <img id="offer-image" src="" alt="" />
+        <div class="offer-modal-info"><span id="offer-modal-category" class="offer-category"></span><h2 id="offer-modal-title"></h2><p>Toque em compartilhar para enviar esta página para alguém.</p><button class="button button-red" data-action="share-offer"><span class="icon" data-icon="share"></span> Compartilhar</button></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-icon">✓</span><span id="toast-message">Link copiado!</span></div>
+    <script src="app.js"></script>
+  </body>
+</html>
