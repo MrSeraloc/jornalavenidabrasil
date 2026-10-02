@@ -1,64 +1,5 @@
-const feedFolder = '02. Feed_JPEG';
-
-const productFiles = [
-  ['01. SÉRUMDOVE.jpg', 'Sérum Dove', 'Beleza'],
-  ['02. DESODORANTE DOVE.jpg', 'Desodorante Dove', 'Beleza'],
-  ['03. DEO DOVE ROLL-ON.jpg', 'Desodorante Dove Roll-on', 'Beleza'],
-  ['04. SAB. DOVE.jpg', 'Sabonete Dove', 'Beleza'],
-  ['05. OLEO DOVE.jpg', 'Óleo Dove', 'Beleza'],
-  ['06. KIT SEDA.jpg', 'Kit Seda', 'Beleza'],
-  ['07. SABONETE REXONA.jpg', 'Sabonete Rexona', 'Beleza'],
-  ['08. SHAMPOO PANTENE.jpg', 'Shampoo Pantene', 'Beleza'],
-  ['09. CONDICIONADOR PANTENE.jpg', 'Condicionador Pantene', 'Beleza'],
-  ['10. PRINCIPIA.jpg', 'Principia', 'Beleza'],
-  ['11. NIVEA LATINHA.jpg', 'Nivea Creme', 'Beleza'],
-  ['12. PAIXÃO.jpg', 'Óleo Corporal Paixão', 'Beleza'],
-  ['13. BEPANTOL.jpg', 'Bepantol', 'Beleza'],
-  ['14. NIVEA ROLL-ON.jpg', 'Nivea Roll-on', 'Beleza'],
-  ['15. MONANGE.jpg', 'Monange', 'Beleza'],
-  ['16. BOZZANO.jpg', 'Bozzano', 'Beleza'],
-  ['17. BOZZANO E MONANGE.jpg', 'Bozzano + Monange', 'Beleza'],
-  ['18. COLGATE 12H.jpg', 'Creme Dental Colgate', 'Beleza'],
-  ['19. ESCOVA COLGATE.jpg', 'Escova Colgate', 'Beleza'],
-  ['20. LISTERINE.jpg', 'Enxaguante Listerine', 'Beleza'],
-  ['21.  FIO DENTAL.jpg', 'Fio dental', 'Beleza'],
-  ['22. SUN FRESH FPS 70 - 200 ml.jpg', 'Sun Fresh FPS 70', 'Cuidados'],
-  ['23. FACIAL NEUTROGENA COM E SEM .jpg', 'Protetor facial Neutrogena', 'Cuidados'],
-  ['24. SUNDOWN - FPS 50 100 ML.jpg', 'Sundown FPS 50', 'Cuidados'],
-  ['25. SUNDOWN FPS 60 - KIDS.jpg', 'Sundown Kids FPS 60', 'Cuidados'],
-  ['26. PLENITUD PLUS FIT.jpg', 'Plenitud Plus Fit', 'Cuidados'],
-  ['27. VITA PLUS.jpg', 'Vita Plus', 'Cuidados'],
-  ['28. INTIMUS 32 UNIDADES.jpg', 'Intimus', 'Cuidados'],
-  ['29. MILI 16 UNIDADES.jpg', 'Mili', 'Bebê'],
-  ['30. FRALDA BB FOFINHO PLUS.jpg', 'Fralda Bebê Fofinho Plus', 'Bebê'],
-  ['31. BB FOFINHO PREMIUM.jpg', 'Bebê Fofinho Premium', 'Bebê'],
-  ['32. HUGGIES HIPERZINHA.jpg', 'Huggies Hiperzinha', 'Bebê'],
-  ['33. FRALDA MILI.jpg', 'Fralda Mili Baby', 'Bebê'],
-  ['34. BEBE FOFINHO 140 _ 100 .jpg', 'Bebê Fofinho', 'Bebê'],
-  ['35. BB FOFINHO PREMIUM.jpg', 'Bebê Fofinho Premium', 'Bebê'],
-  ['36. LENÇO HUGGIES - 120 UNIDADES.jpg', 'Lenço Huggies', 'Bebê'],
-  ['37. GRANADO 250mL.jpg', 'Granado', 'Cuidados'],
-  ['38. HIPOGLOS 40g.jpg', 'Hipoglós', 'Cuidados'],
-  ['39. NISTATINA - OXIDO DE ZINCO.jpg', 'Nistatina + óxido de zinco', 'Saúde'],
-  ['40. CREATINA  300g.jpg', 'Creatina 300g', 'Bem-estar'],
-  ['41. COBALAMAX.jpg', 'Cobalamax', 'Bem-estar'],
-  ['42. MAG PLUS.jpg', 'Mag Plus', 'Bem-estar'],
-  ['43. flex + 60 capsulas.jpg', 'Flex +', 'Bem-estar'],
-  ['44. NAC TERRA NATIVA.jpg', 'NAC Terra Nativa', 'Bem-estar'],
-  ['45. GTECH BSP-11.jpg', 'Aparelho G-Tech', 'Saúde'],
-  ['46. CIMEGRIPE 20 CAPSULAS.jpg', 'Cimegripe', 'Saúde'],
-  ['47. GRIP 7.jpg', 'Grip 7', 'Saúde'],
-  ['48. VAPO RUB 12G.jpg', 'VapoRub', 'Saúde'],
-  ['49. LORATAMED 12 COMPRIMIDOS.jpg', 'Loratamed', 'Saúde'],
-  ['50. MAXIDRATE.jpg', 'Maxidrate', 'Saúde'],
-  ['51. TYLENOL 10 COMPRIMIDOS.jpg', 'Tylenol', 'Saúde'],
-  ['52. NOVALGINA.jpg', 'Novalgina', 'Saúde'],
-  ['53. NEOSALDINA 30 COMP.jpg', 'Neosaldina', 'Saúde'],
-  ['54. SAL DE FRUTA ENO.jpg', 'Sal de Fruta Eno', 'Saúde'],
-  ['55. ENTEROGERMINA.jpg', 'Enterogermina', 'Saúde'],
-  ['56. ENTEROGERMINA PLUS.jpg', 'Enterogermina Plus', 'Saúde'],
-  ['57. COLIRIO HYABAK.jpg', 'Colírio Hyabak', 'Saúde']
-];
+const feedFolder = '02. Feed';
+const feedFiles = ["01. S\u00C9RUMDOVE.png","02. DESODORANTE DOVE.png","03. SAB. DOVE.png","04. NIVEA MILK.png","05. KIT SEDA.png","06. NIVEA FACIAL.png","07. REXONA.png","08. Sabonete em Barra Lux.png","09. Creme Dental Sorriso Tripla.png","10. Absorvente Mili Prote\u00E7\u00E3o Tot.png","11. Absorvente Intimus Toda.png","12. Absorvente Interno Intimus .png","13. Creme Bepantol Derma.png","14. Tratamento Leave-in S\u00E9rum.png","15. \u00D3leo e S\u00E9rum Dove Bond.png","16. Preservativo Lubrificado Jon.png","17. Aparelho de Barbear Gillette.png","18. SUN FRESH FPS 70 - 200 ml.png","19. SUNDOWN - FPS 50 100 ML.png","20. SUNDOWN FPS 60 - KIDS.png","21. Protetor Solar Principia.png","22. Protetor Solar Facial Nivea.png","23. Protetor Solar Ps-03 .png","24. Protetor Solar  Facial Nivea.png","25. CREATINA  300g.png","26. flex + 60 capsulas.png","27. NAC TERRA NATIVA.png","28. Mag Plus 5 Herbamed .png","29. Gummies Hair Tutti-Frutti.png","30. GTECH BSP-11.png","31. PLENITUD PLUS FIT.png","32. VITA PLUS.png","33. FRALDA BB FOFINHO PLUS.png","34. BB FOFINHO PREMIUM.png","35. HUGGIES HIPERZINHA.png","36. FRALDA MILI.png","37. BEBE FOFINHO 140 _ 100 .png","38. BB FOFINHO PREMIUM.png","39. LEN\u00C7O HUGGIES - 120 UNIDADES.png","40. Fralda Huggies Praia.png","41. Fralda Hipop\u00F3 Baby Hiper.png","42. NISTATINA - OXIDO DE ZINCO.png","43. CIMEGRIPE 20 CAPSULAS.png","44. GRIP 7.png","45. LORATAMED 12 COMPRIMIDOS.png","46. Dorflex Analg\u00E9sico.png","47. Vick Inalador.png","48. Maxalgina Gotas 500mg_mL.png","49. Composto de Mel e Extrato.png","50. Sal de Fruta Eno  Sach\u00EA 5g.png","51. Complexo Senna  Almeida Prad.png","52. Luftal Simeticona 75mg_mL.png","53. Vitamina D 600UI Dprev Todo.png"];
 
 const icons = {
   share: '<svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"></circle><circle cx="6" cy="12" r="2.5"></circle><circle cx="18" cy="19" r="2.5"></circle><path d="m8.2 10.8 7.5-4.2M8.2 13.2l7.5 4.2"></path></svg>',
@@ -71,15 +12,13 @@ const icons = {
 const $ = (selector) => document.querySelector(selector);
 const fileUrl = (folder, filename) => `${encodeURIComponent(folder)}/${encodeURIComponent(filename)}`;
 
-const offers = productFiles.map(([file, title, category], index) => ({
+const feedItems = feedFiles.map((file, index) => ({
   id: String(index + 1).padStart(2, '0'),
-  title,
-  category,
+  title: file.replace(/^\d+\.\s*/, '').replace(/\.[^.]+$/, '').trim(),
+  category: 'Oferta',
   src: fileUrl(feedFolder, file),
   kind: 'offer'
 }));
-
-const feedItems = offers;
 const state = { visibleLimit: 8, selectedItem: null };
 
 function applyIcons() {
